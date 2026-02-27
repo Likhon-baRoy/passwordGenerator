@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" type="image/png" size="32x32" href="images/favicon.png" />
+
+    <title>Likhon's Random Password Generator</title>
+  </head>
+
+  <body>
+    <main class="flex">
+      <div class="container">
+        <div class="upperSection">
+          <h1 class="title">Generate a<br /><span class="title-green">random password</span></h1>
+          <h2 class="supportingTitle">Never use a insecure password again.</h2>
+          <span id="password-slider-text">Length: <label for="slider" id="sliderNumber">8</label></span>
+
+          <input type="range" value="8" min="8" max="12" name="slider" class="slider" id="slider" />
+
+          <button class="btn" onclick="getGeneratePassword()"><i class="fa fa-flash"></i>Generate passwords</button>
+        </div>
+        <hr />
+        <div class="downSection">
+          <div class="generatedPassword" id="password1-el"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+          <div class="generatedPassword" id="password2-el"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+          <div class="generatedPassword" id="password3-el"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+          <div class="generatedPassword" id="password4-el"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+          <div id="letter-main"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        <span> Project by <a href="" target="_blank">Scrimba</a>.<br />
+          Coded by <a href="https://github.com/Likhon-baRoy" target="_blank">Likhon Baroi</a>.</span>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="scripts/index.js"></script>
+  </body>
+</html>
